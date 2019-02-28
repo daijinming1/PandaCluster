@@ -1,6 +1,6 @@
 package com.panda.mapper;
 
-import com.cloud.pojo.entity.User;
+import com.panda.pojo.entity.SysUser;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
@@ -12,5 +12,5 @@ import org.springframework.stereotype.Repository;
  **/
 @Mapper
 @Repository
-public interface UserMapper extends tk.mybatis.mapper.common.Mapper<User>{
+public interface UserMapper extends tk.mybatis.mapper.common.Mapper<SysUser>{
 }

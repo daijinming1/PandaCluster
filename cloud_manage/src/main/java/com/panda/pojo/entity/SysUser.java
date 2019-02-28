@@ -11,7 +11,7 @@ import javax.persistence.Id;
  * @Date 2019/2/21 15:21
  **/
 @Data
-public class User {
+public class SysUser {
     @Id
     private Integer id;
 

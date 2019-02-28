@@ -1,7 +1,7 @@
 package com.panda.controller;
 
-import com.cloud.pojo.entity.User;
-import com.cloud.service.UserService;
+import com.panda.pojo.entity.SysUser;
+import com.panda.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
@@ -25,14 +25,14 @@ public class UserController {
     private UserService userService;
     @GetMapping("/")
     @ApiOperation(value = "用户列表")
-    public List<User> userList(){
+    public List<SysUser> userList(){
         return userService.list();
     }
 
     @PostMapping("/")
     @ApiOperation(value = "添加用户")
-    public String addUser(@RequestBody User user){
-        return userService.addUser(user);
+    public String addUser(@RequestBody SysUser sysUser){
+        return userService.addUser(sysUser);
     }
 
     @DeleteMapping("/{id}")
@@ -43,7 +43,7 @@ public class UserController {
     }
     @PutMapping("/")
     @ApiOperation(value = "修改用户")
-    public String  updateUser(@RequestBody User user){
-        return userService.updateUser(user);
+    public String  updateUser(@RequestBody SysUser sysUser){
+        return userService.updateUser(sysUser);
     }
 }

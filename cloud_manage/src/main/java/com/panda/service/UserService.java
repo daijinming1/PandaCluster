@@ -1,6 +1,7 @@
 package com.panda.service;
 
-import com.cloud.pojo.entity.User;
+
+import com.panda.pojo.entity.SysUser;
 
 import java.util.List;
 
@@ -15,14 +16,14 @@ public interface UserService {
      * 查询
      * @return
      */
-    List<User> list();
+    List<SysUser> list();
 
     /**
      *添加
-     * @param user
+     * @param sysUser
      * @return
      */
-    String addUser(User user);
+    String addUser(SysUser sysUser);
 
     /**
      *删除
@@ -33,8 +34,8 @@ public interface UserService {
 
     /**
      *更新
-     * @param user
+     * @param sysUser
      * @return
      */
-    String updateUser(User user);
+    String updateUser(SysUser sysUser);
 }

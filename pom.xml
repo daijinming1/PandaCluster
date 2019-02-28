@@ -7,6 +7,7 @@
   <groupId>com.panda</groupId>
   <artifactId>pandacluster</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
   <!--子模块工厂配置-->
   <modules>
     <module>cloud_home</module>
