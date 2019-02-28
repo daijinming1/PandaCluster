@@ -1,0 +1,14 @@
+server:
+  port: 8080
+  tomcat:
+    accept-count: 500
+    max-threads: 1000
+spring:
+  application:
+    name: platform-oauth
+  profiles:
+    active: dev
+mybatis:
+  mapper-locations: classpath:/mybatis-mappers/*
+  configuration:
+    mapUnderscoreToCamelCase: true

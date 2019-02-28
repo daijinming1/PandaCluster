@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.95.225.120:3306/cloud?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    username: ENC(24aWeOT2XzZ1XrQIDEONW0o5LlmXYD6A)
+    password: ENC(24aWeOT2XzZ1XrQIDEONW0o5LlmXYD6A)
+jasypt:
+  encryptor:
+    password: cloudmanage
+
+#eureka:
+#  instance:
+#  client:
+#    serviceUrl: #Eureka客户端与Eureka服务端进行交互的地址
+#      defaultZone: http://47.95.225.120:8761/eureka/
