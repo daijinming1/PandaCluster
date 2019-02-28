@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.95.225.120:3306/home-backend?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    username: cloud_db
+    password: cloud_db

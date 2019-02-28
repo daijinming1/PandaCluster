@@ -1,0 +1,11 @@
+server:
+  port: 8080
+  tomcat:
+    accept-count: 500
+    max-threads: 1000
+
+spring:
+  application:
+    name: cloud_manage
+  profiles:
+    active: dev

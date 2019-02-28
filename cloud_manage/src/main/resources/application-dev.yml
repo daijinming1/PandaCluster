@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.95.225.120:3306/cloud?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    username: ENC(24aWeOT2XzZ1XrQIDEONW0o5LlmXYD6A)
+    password: ENC(24aWeOT2XzZ1XrQIDEONW0o5LlmXYD6A)
+
+   rabbitmq:
+      host: 47.95.225.120
+      port: 5672
+      username: ENC(24aWeOT2XzZ1XrQIDEONW0o5LlmXYD6A)
+      password: ENC(24aWeOT2XzZ1XrQIDEONW0o5LlmXYD6A)
+      virtual-host: /
+      listener:
+        simple:
+          acknowledge-mode: manual # 手动应答
+          concurrency: 5 # 消费端最小并发数
+          max-concurrency: 10 # 消费端最大并发数
+          prefetch: 5 # 一次请求中预处理的消息数量
+      cache:
+        channel:
+          size: 50 # 缓存的channel数量
+### 自定义配置
+mq:
+  defaultExchange: amqpExchange # 默认交换器
+  queue: queue # 队列名
+  routeKey: queue_key # 路由key
+jasypt:
+  encryptor:
+    password: cloudmanage
+
+eureka:
+  instance:
+  client:
+    serviceUrl: #Eureka客户端与Eureka服务端进行交互的地址
+      defaultZone: http://localhost:8761/eureka/
