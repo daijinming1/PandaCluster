@@ -13,6 +13,8 @@
     <module>cloud_home</module>
     <module>cloud_manage</module>
     <module>eureka-server</module>
+    <module>oauth-api-model</module>
+    <module>oauth-center</module>
   </modules>
 
   <!--Spring Boot配置-->
